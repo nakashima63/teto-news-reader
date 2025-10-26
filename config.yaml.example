@@ -1,0 +1,26 @@
+# RSS フィード設定
+rss_feeds:
+  - url: "https://news.yahoo.co.jp/rss/topics/top-picks.xml"
+    name: "Yahoo!ニュース"
+    max_items: 3
+
+# VOICEPEAK 設定
+voicepeak:
+  path: "voicepeak"
+  narrator: "重音テト"
+  max_chars: 120
+
+# OpenAI 設定
+openai:
+  model: "gpt-4o-mini"
+  max_tokens: 150
+
+# ログ設定
+logging:
+  level: "INFO"
+  file: "./logs/teto-news.log"
+
+# キャッシュ設定
+cache:
+  file: "./cache/read_articles.json"
+  ttl_hours: 24
